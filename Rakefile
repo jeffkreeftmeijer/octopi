@@ -11,14 +11,17 @@ begin
     gem.homepage = "http://github.com/fcoury/octopi"
     gem.authors = ["Felipe Coury"]
     gem.rubyforge_project = "octopi"
-    gem.add_dependency('nokogiri', '>= 1.3.1')
-    gem.add_dependency('httparty', '>= 0.4.5')
+    gem.add_dependency('nokogiri',  '>= 1.3.1')
+    gem.add_dependency('httparty',  '>= 0.4.5') 
+    gem.add_dependency('mechanize', '>= 0.9.3')
+    gem.add_dependency('api_cache', '>= 0.2.0')
+    gem.add_development_dependency('shoulda', '>=2.10.2')
+    gem.add_development_dependency('fakeweb', '>=1.2.7')
     gem.files.exclude 'test/**/*'
     gem.files.exclude 'test*'
     gem.files.exclude 'doc/**/*'
     gem.files.exclude 'examples/**/*'
     
-
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
